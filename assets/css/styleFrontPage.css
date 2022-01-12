@@ -123,7 +123,7 @@ main {
 
 .section-green {
   background-color: var(--green);
-  padding: 20px 50px 50px;
+  padding: 20px 50px 20px;
   color: var(--ecrie);
 }
 
@@ -135,7 +135,7 @@ main {
 
 .section-ecrie {
   background-color: var(--ecrie);
-  padding: 20px 50px 50px;
+  padding: 20px 50px 20px;
 }
 
  .section-ecrie > p {
@@ -169,5 +169,8 @@ main {
 }
 
 /* Party Venue page */
+.section-ecrie > h2 {
+  color: var(--green);
+}
 
 /* Meet the staff page */

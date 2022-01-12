@@ -110,7 +110,7 @@ main {
   padding: 20px 100px;
 }
 
- h1, h2, h3 {
+.menu-section > h1, h2, h3 {
   text-align: center;
 }
 
@@ -141,3 +141,17 @@ main {
   color: var(--green);
   border-bottom: var(--green) solid 6px;
 }  
+
+/* Lunch Menu page */
+/* Dinner Menu page */
+/* Coffee and Dessert page */
+/* Drinks page */
+
+/* Inn Gjøl page */
+
+/* Party Venue page */
+img {
+  width: 100%;
+}
+
+/* Meet the staff page */

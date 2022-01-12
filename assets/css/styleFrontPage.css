@@ -26,6 +26,7 @@ nav {
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--ecrie);
 }
 
 header {
@@ -103,3 +104,40 @@ nav > ul > li > a {
 }
 
 
+/* Menu page */
+
+main {
+  padding: 20px 100px;
+}
+
+ h1, h2, h3 {
+  text-align: center;
+}
+
+.menu-section {
+  padding: 20px 50px;
+}
+
+.menu-section-green {
+  background-color: var(--green);
+  padding: 20px 50px 50px;
+  color: var(--ecrie);
+}
+
+.menu-section-green > h2 > a {
+  text-decoration: none;
+  color: var(--ecrie);
+  border-bottom: var(--ecrie) solid 6px;
+} 
+
+.menu-section-ecrie {
+  background-color: var(--ecrie);
+  padding: 20px 50px 50px ;
+  color: var(--green);
+}
+
+.menu-section-ecrie > h2 > a {
+  text-decoration: none;
+  color: var(--green);
+  border-bottom: var(--green) solid 6px;
+}  

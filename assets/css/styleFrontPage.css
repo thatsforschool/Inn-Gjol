@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+:root {
+  font-size: 20px;
+  --green: #3a4a48;
+  --khaki: #c8ae67;
+  --ecrie: #f7f4e2;
+  --brown: #2f2220;
+  --blue: #0b1938;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+button,
+time,
+nav {
+  font-family: "Roboto Slab", serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 80vh;
+  background-image: url(../img/imagesDinner/COLOURBOX11861632cropped.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 200px;
+  max-height: 200px;
+  margin: 20px;
+}
+
+.header-buttons {
+  margin: 10px 20px;
+}
+
+.header-nav-button {
+  /* color: var(--green);
+    background-color: var(--ecrie);
+     border: none; */
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--ecrie);
+  border: solid 4px var(--ecrie);
+  margin-left: 40px;
+  width: 150px;
+  height: 40px;
+  font-size: 1rem;
+}
+
+.header-nav-button:hover {
+  color: var(--green);
+  background-color: var(--ecrie);
+  border: none;
+  cursor: pointer;
+}
+
+.header-nav-button::active {
+  color: var(--green);
+  background-color: var(--khaki);
+  border: none;
+}
+
+.header-nav-button::disabled {
+    color: var(--green);
+    background-color: var(--ecrie);
+    border: none;
+  }
+
+nav {
+  margin: 20px;
+  display: flex;
+}
+
+nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav > ul > li {
+  margin-left: 40px;
+}
+
+nav > ul > li > a {
+  color: var(--ecrie);
+  text-decoration: none;
+  border-bottom: var(--ecrie) solid 4px;
+}
+
+

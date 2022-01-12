@@ -105,9 +105,8 @@ nav > ul > li > a {
 
 
 /* Menu page */
-
 main {
-  padding: 20px 100px;
+  padding: 50px 200px;
 }
 
 .menu-section > h1, h2, h3 {
@@ -118,25 +117,32 @@ main {
   padding: 20px 50px;
 }
 
-.menu-section-green {
+.menu-section > p {
+  color: var(--blue);
+}
+
+.section-green {
   background-color: var(--green);
   padding: 20px 50px 50px;
   color: var(--ecrie);
 }
 
-.menu-section-green > h2 > a {
+.section-green > h2 > a {
   text-decoration: none;
   color: var(--ecrie);
   border-bottom: var(--ecrie) solid 6px;
 } 
 
-.menu-section-ecrie {
+.section-ecrie {
   background-color: var(--ecrie);
-  padding: 20px 50px 50px ;
-  color: var(--green);
+  padding: 20px 50px 50px;
 }
 
-.menu-section-ecrie > h2 > a {
+ .section-ecrie > p {
+  color: var(--green);
+} 
+
+.section-ecrie > h2 > a {
   text-decoration: none;
   color: var(--green);
   border-bottom: var(--green) solid 6px;
@@ -148,10 +154,20 @@ main {
 /* Drinks page */
 
 /* Inn Gjøl page */
+.section-blue {
+  background-color: var(--blue);
+  padding: 20px 50px 50px;
+  margin: 0;
+}
+
+.section-blue > h2, h3, p, table {
+  color: var(--ecrie);
+}
+
+.section-blue > table {
+  text-align: left;
+}
 
 /* Party Venue page */
-img {
-  width: 100%;
-}
 
 /* Meet the staff page */

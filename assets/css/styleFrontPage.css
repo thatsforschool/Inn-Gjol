@@ -281,6 +281,9 @@ main {
   margin: 0;
 }
 
+
+
+
 .articlesOpen{
   width: 60vw;
   display: inline-block;
@@ -367,3 +370,86 @@ footer {
   width: 60vw;
   height: 40vh;
 }
+
+
+/* Menu page */
+main {
+  padding: 50px 200px;
+}
+
+.menu-section > h1, h2, h3 {
+  text-align: center;
+}
+
+.menu-section {
+  padding: 20px 50px;
+}
+
+.menu-section > p {
+  color: var(--blue);
+}
+
+.section-green {
+  background-color: var(--green);
+  padding: 20px 50px 20px;
+  color: var(--ecrie);
+  margin: 0;
+}
+
+.section-green > h2 > a {
+  text-decoration: none;
+  color: var(--ecrie);
+  border-bottom: var(--ecrie) solid 6px;
+} 
+
+.section-ecrie {
+  background-color: var(--ecrie);
+  padding: 20px 50px 20px;
+  margin: 0;
+}
+
+ .section-ecrie > p {
+  color: var(--green);
+} 
+
+.section-ecrie > h2 > a {
+  text-decoration: none;
+  color: var(--green);
+  border-bottom: var(--green) solid 6px;
+}  
+
+/* Lunch Menu page */
+/* Dinner Menu page */
+/* Coffee and Dessert page */
+/* Drinks page */
+
+/* Inn Gjøl page */
+.section-blue {
+  background-color: var(--blue);
+  padding: 20px 50px 20px;
+  margin: 0;
+}
+
+.section-blue > h2, h3, p, table {
+  color: var(--ecrie);
+}
+
+.section-blue > table {
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+/* Party Venue page */
+.section-ecrie > h2 {
+  color: var(--green);
+}
+
+.section-ecrie > img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Meet the staff page */

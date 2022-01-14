@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+:root {
+  font-size: 20px;
+  --green: #3a4a48;
+  --khaki: #c8ae67;
+  --ecrie: #f7f4e2;
+  --brown: #2f2220;
+  --blue: #0b1938;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--ecrie);
+}
+
+h1,
+h2,
+h3,
+button,
+time,
+nav {
+  font-family: "Roboto Slab", serif;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 20px;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+table {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+  grid-template-rows: 80vh auto auto auto auto auto auto auto;
+}
+
+header {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 80vh;
+  background-image:url(../img/imagesLunch/img19.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 200px;
+  max-height: 200px;
+  margin: 20px;
+}
+
+.header-buttons {
+  margin: 10px 20px;
+}
+
+.header-nav-button {
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--ecrie);
+  border: solid 4px var(--ecrie);
+  margin-left: 40px;
+  width: 150px;
+  height: 40px;
+  font-size: 1rem;
+}
+
+.header-nav-button:hover {
+  color: var(--green);
+  background-color: var(--ecrie);
+  border: none;
+  cursor: pointer;
+}
+
+.header-nav-button::active {
+  color: var(--green);
+  background-color: var(--khaki);
+  border: none;
+}
+
+.header-nav-button::disabled {
+  color: var(--green);
+  background-color: var(--ecrie);
+  border: none;
+}
+
+nav {
+  margin: 20px;
+  display: flex;
+}
+
+nav > ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav > ul > li {
+  margin-left: 40px;
+}
+
+nav > ul > li > a {
+  color: var(--ecrie);
+  text-decoration: none;
+  border-bottom: var(--ecrie) solid 4px;
+}
+
+/* main */
+main {
+    grid-column: 2/5;
+    grid-row: 2/8;
+    margin: 20px 0;
+  }
+  
+  .ecrie {
+    background-color: var(--ecrie);
+    color: var(--green);
+  }
+  
+  .green {
+    background-color: var(--green);
+    color: var(--ecrie);
+  }
+  
+  .blue {
+    background-color: var(--blue);
+    color: var(--ecrie);
+  }
+  
+  .khaki {
+    background-color: var(--khaki);
+    color: var(--blue);
+  }
+
+  main > section { 
+      margin: 20px 0;
+  }
+
+  main > section > h2 > a {
+    border-bottom: 4px solid;
+  }
+
+  
+  main > section > h2 > a::after {
+    content: " \f054 ";
+    font-family: "Font Awesome 5 free";
+    font-weight: 900;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  
+  main > section > h2:hover > a {
+    color: var(--khaki);
+  }
+/* footer */
+
+footer {
+  grid-column: 1/6;
+  grid-row: 8/9;
+  background-color: var(--brown);
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8rem;
+  color: var(--ecrie);
+  padding: 20px;
+}
+
+.footer-icons {
+  width: 50px;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.footer-icon_facebook::before {
+  content: " \f082 ";
+  font-family: "Font Awesome 5 brands";
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--ecrie);
+}
+.footer-icon_instagram::before {
+  content: " \f16d ";
+  font-family: "Font Awesome 5 brands";
+  font-weight: 400;
+  font-size: 3rem;
+  color: var(--ecrie);
+}
+
+.footer-address > address > p > a {
+  color: var(--ecrie);
+  text-decoration: none;
+}
+

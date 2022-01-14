@@ -34,7 +34,7 @@ header {
   padding: 0;
   width: 100vw;
   height: 80vh;
-  background-image: url(../img/imagesDinner/COLOURBOX11861632cropped.jpg);
+  background-image: url(../img/imagesDinner/img11.jpg);
   background-size: cover;
   background-position: top;
   display: flex;
@@ -125,15 +125,12 @@ div.newsMenu {
   display: none;
 }
 
-
-
-div.newsOpened  {
+div.newsOpened {
   display: inline-block;
 }
 
-
 div.newsOpened body {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 /* main */
@@ -218,7 +215,7 @@ main {
   content: " \f054 ";
   font-family: "Font Awesome 5 free";
   font-weight: 900;
-  font-size: 1, 2rem;
+  font-size: 1.2rem;
   padding: 10px;
 }
 
@@ -271,11 +268,31 @@ main {
   margin: 0;
 }
 
+.dropbtn {
+  background-color: var(--ecrie);
+  color: var(--green);
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
 
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: var(--khaki);
+}
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-.articlesOpen{
-  width: 60vw;
+.dropdown-content {
+  display: none;
+  z-index: 1;
+}
+
+.show {
   display: inline-block;
 }
 
@@ -285,6 +302,7 @@ main {
 
 .main-section_favorites-articles {
   width: 60vw;
+  display: none;
 }
 
 .favorites-article {
@@ -362,8 +380,7 @@ footer {
 }
 
 
-
-
+/* Menu page
 
 main {
   padding: 50px 200px;
@@ -372,6 +389,9 @@ main {
 /* Menu page */
 
 .menu-section > h1, h2, h3 {
+.menu-section > h1,
+h2,
+h3 {
   text-align: center;
 }
 
@@ -394,7 +414,7 @@ main {
   text-decoration: none;
   color: var(--ecrie);
   border-bottom: var(--ecrie) solid 6px;
-} 
+}
 
 .section-ecrie {
   background-color: var(--ecrie);
@@ -402,15 +422,15 @@ main {
   margin: 0;
 }
 
- .section-ecrie > p {
+.section-ecrie > p {
   color: var(--green);
-} 
+}
 
 .section-ecrie > h2 > a {
   text-decoration: none;
   color: var(--green);
   border-bottom: var(--green) solid 6px;
-}  
+} */
 
 /* Lunch Menu page */
 /* Dinner Menu page */
@@ -418,13 +438,19 @@ main {
 /* Drinks page */
 
 /* Inn Gjøl page */
-.section-blue {
+/* .section-blue {
   background-color: var(--blue);
   /* padding: 20px 50px 20px; */
   margin: 0;
 }
 
-.section-blue >h2, h3, p, table {
+
+
+.section-blue > h2,
+h3,
+p,
+table {
+
   color: var(--ecrie);
   margin: 0px 50px 0;
 }
@@ -444,19 +470,24 @@ main {
 } 
 
 img {
+
 width: 100%;
 margin: 0;
 }
+=======
+  width: 100%;
+} */
+
 
 
 /* Party Venue page */
-.section-ecrie > h2 {
+/* .section-ecrie > h2 {
   color: var(--green);
 }
 .section-ecrie > img {
   width: 100%;
   margin-top: 20px;
-}
+} */
 
 /* Meet the staff page */
 .section-staff {

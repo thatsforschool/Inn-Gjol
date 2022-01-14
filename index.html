@@ -7,17 +7,18 @@
     <link rel="stylesheet" href="assets/css/styleFrontPage.css" />
     <link rel="stylesheet" href="assets/fontawsome/css/all.css" />
     <link rel="stylesheet" href="assets/js/front.js" defer />
-    <link rel="stylesheet" href="assets/js/myMap.js" defer>
+    <!-- <link rel="stylesheet" href="assets/js/myMap.js" defer /> -->
     <title>Gjøl Kra</title>
   </head>
 
   <body>
     <header>
       <div class="header-logo">
-        <img
-          src="assets/icons/Gjøl-Kro_logo/GjŤl-Kro_logo_white.svg "
-          alt="Gjøl Kro"
-        />
+        <a href="index.html"
+          ><img
+            src="assets/icons/Gjøl-Kro_logo/GjŤl-Kro_logo_white.svg"
+            alt="Gjøl Kro"
+        /></a>
       </div>
       <nav>
         <ul>
@@ -26,7 +27,7 @@
           <li><a href="partyvenue.html">Party Venue</a></li>
           <li><a href="staff.html">Meet the staff</a></li>
         </ul>
-        <div class="header-buttons" >
+        <div class="header-buttons">
           <button class="header-nav-button" id="news">News</button>
           <button class="header-nav-button">Book a Table</button>
         </div>
@@ -93,24 +94,39 @@
       </section>
 
       <section class="main-section ecrie favourites">
-        <div class="main-section_table green"><a href="#" id="table">Your Favorites</a></div>
-        <div class="main-section_favorites-articles ecrie articlesClosed" id="articles">
+        <div class="main-section_table green">
+          <button onclick="myFunction()" class="dropbtn">Your Favorites</button>
+          <!-- <a href="#" onclick="myFunction()" id="table" >Your Favorites</a> -->
+        </div>
+        <div
+          class="main-section_favorites-articles ecrie dropdown-content"
+          id="myDropdown"
+        >
           <article class="favorites-article art_1 khaki">
-            <img src="assets/img/imagesLunch/img1.jpg" alt="stjerneskud"> 
+            <img src="assets/img/imagesLunch/img1.jpg" alt="stjerneskud" />
             <h3>Stjerneskud</h3>
-            <p class="favorites-article_text">Grønne tomater - Fennikel - Estragonmayo</p>
+            <p class="favorites-article_text">
+              Grønne tomater - Fennikel - Estragonmayo
+            </p>
             <p class="favorites-article_price">185dkk</p>
           </article>
           <article class="favorites-article art_2 khaki">
-            <img src="assets/img/imagesLunch/top-view-delicious-tasty-burgers-wooden-background-fast-tasty-food.jpg" alt="bøfsandwich"> 
+            <img src="assets/img/imagesLunch/img21.jpg" alt="bøfsandwich" />
             <h3>Bøfsandwich</h3>
-            <p class="favorites-article_text">Bløde løg - Grønkål - Remoulade</p>
+            <p class="favorites-article_text">
+              Bløde løg - Grønkål - Remoulade
+            </p>
             <p class="favorites-article_price">165dkk</p>
           </article>
           <article class="favorites-article art_3 khaki">
-            <img src="assets/img/imagesDinner/COLOURBOX34182596.jpg" alt="confitret æggeblomme"> 
+            <img
+              src="assets/img/imagesDinner/img (1).jpg"
+              alt="confitret æggeblomme"
+            />
             <h3>Confitret Æggeblomme</h3>
-            <p class="favorites-article_text">Kartoffelcreme - Urt - Grøn olie</p>
+            <p class="favorites-article_text">
+              Kartoffelcreme - Urt - Grøn olie
+            </p>
             <p class="favorites-article_price">125dkk</p>
           </article>
         </div>

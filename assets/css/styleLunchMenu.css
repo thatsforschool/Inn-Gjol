@@ -43,6 +43,11 @@ table {
 a {
   text-decoration: none;
   color: inherit;
+  transition: .3s ease-in;
+}
+
+button {
+  transition: .3s ease-in;
 }
 
 body {
@@ -158,6 +163,10 @@ main > p {
     font-weight: 900;
     font-size: 1rem;
     padding: 10px;
+}
+
+.goBack:hover {
+  color: var(--khaki);
 }
 
 .main-articles_section {

@@ -4,55 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/styleFrontPage.css" />
+    <link rel="stylesheet" href="assets/css/styleMenu.css" />
+    <link rel="stylesheet" href="assets/fontawsome/css/all.css">
     <title>Gjøl Kro - Menu</title>
   </head>
   <body>
     <header>
       <div class="header-logo">
-        <img
-          src="assets/icons/Gjøl-Kro_logo/GjŤl-Kro_logo_white.svg "
-          alt="Gjøl Kro"
-        />
+        <a href="index.html"><img src="assets/icons/Gjøl-Kro_logo/GjŤl-Kro_logo_white.svg" alt="Gjøl Kro"></a>
       </div>
       <nav>
         <ul>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Inn Gjøl</a></li>
-          <li><a href="">Party Venue</a></li>
-          <li><a href="">Meet the staff</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="inngjøl.html">Inn Gjøl</a></li>
+          <li><a href="partyvenue.html">Party Venue</a></li>
+          <li><a href="staff.html">Meet the staff</a></li>
         </ul>
         <div class="header-buttons">
-            <button class="header-nav-button">News</button> 
-            <button class="header-nav-button">Book a Table</button>
-          </div>
+          <button class="header-nav-button" id="news">News</button>
+          <button class="header-nav-button">Book a Table</button>
+        </div>
+        <div class="newsMenu" id="newsMenu"></div>
       </nav>
     </header>
-
     <main>
-        <section class="menu-section">
-            <h2>Menu</h2>
+        <section class="menu-section ecrie">
+            <h1>Menu</h1>
             <p>The inn shouldn’t be seen as ”old school”, quite the opposite. We want to bring it up to the modern standard of culinary experiences in restaurants, also for large groups. We focus on local raw goods and our food is traditional Danish meals with a modern twist.</p>
         </section>
 
-        <section class="section-green">
+        <section class="green">
             <h2><a href="lunch.html">Lunch Menu</a></h2>
             <p>We invite you to Gjøl Kro where each meal introduces its own uniqueness  and provide you bites of traditional Danish lunch food with modern touch to it.</p>
         </section>
 
-        <section class="section-ecrie">
+        <section class="ecrie">
             <h2><a href="dinner.html">Dinner Menu</a></h2>
             <p>We encourage you to join us in Gjøl Kro for your next dinner with your friends and family to enjoy dishes that capture the flavors of of Denmark’s ocean.</p>
         </section>
 
-        <section class="section-green">
+        <section class="green">
             <h2><a href="coffee.html">Coffee and Dessert</a></h2>
             <p>For the love of coffee, what is better than the best possible cup of locally roasted coffee with our delicious homemade desserts alongside? We look forward to hosting you!</p>
         </section>
 
-        <section class="section-ecrie">
+        <section class="ecrie">
             <h2><a href="drinks.html">Drinks</a></h2>
             <p>You look thirsty... Meet us at Gjøl Kro to have a good time while sipping on something refreshing.</p>
         </section>
     </main>
+    <footer>
+      <section class="footer-icons">
+        <a
+          href="https://www.facebook.com/GjoelKro"
+          class="footer-icon_facebook"
+        ></a>
+        <a
+          href="https://www.instagram.com/gjoel_kro/"
+          class="footer-icon_instagram"
+        ></a>
+      </section>
+      <section class="footer-address">
+        <h3>Address</h3>
+        <address>
+          <p><a href="tel:+4522367687">+45 22 36 76 87</a></p>
+          <p>Fjordgade 18 9440 Gjøl</p>
+          <!-- <div class="footer-adress_map" id="map"></div> -->
+        </address>
+      </section>
+      <section class="footer-openingHours">
+        <h3>Opening Hours</h3>
+        <table>
+          <tr>
+            <th>Monday</th>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <th>Tuesday</th>
+            <td>Closed</td>
+          </tr>
+          <tr>
+            <th>Wednesday</th>
+            <td>12:00 - 22:00</td>
+          </tr>
+          <tr>
+            <th>Thursday</th>
+            <td>12:00 - 22:00</td>
+          </tr>
+          <tr>
+            <th>Friday</th>
+            <td>12:00 - 22:00</td>
+          </tr>
+          <tr>
+            <th>Saturday</th>
+            <td>12:00 - 22:00</td>
+          </tr>
+          <tr>
+            <th>Sunday</th>
+            <td>12:00 - 22:00</td>
+          </tr>
+        </table>
+      </section>
+    </footer>
+  </body>
+</html>
+
     

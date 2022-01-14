@@ -12,7 +12,6 @@
   font-family: "Roboto Condensed", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: var(--ecrie);
 }
 
 h1,
@@ -24,38 +23,13 @@ nav {
   font-family: "Roboto Slab", serif;
 }
 
-h2,
-p {
-  margin: 0;
-  padding: 20px;
-}
-
-h1,
-h2,
-h3 {
-  text-align: center;
-}
-
-table {
-  text-align: left;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 body {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-  grid-template-rows: 80vh auto auto auto auto auto auto auto;
+  background-color: var(--ecrie);
 }
 
 header {
-  grid-column: 1/6;
-  grid-row: 1/2;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -65,6 +39,19 @@ header {
   background-position: top;
   display: flex;
   justify-content: space-between;
+}
+
+.innGjolheader{
+  background-image: url(../img/imagesInn/i283726789564705020.jpg);
+}
+
+.partyvenueheader {
+  background-image: url(../img/imagesParty/pexels-askar-abayev-5638828.jpg);
+}
+
+.staffheader {
+  background-image: url(../img/imagesStaff/familien.jpg);
+  background-position: bottom;
 }
 
 .header-logo {
@@ -78,6 +65,9 @@ header {
 }
 
 .header-nav-button {
+  /* color: var(--green);
+    background-color: var(--ecrie);
+     border: none; */
   background-color: rgba(0, 0, 0, 0);
   color: var(--ecrie);
   border: solid 4px var(--ecrie);
@@ -101,10 +91,10 @@ header {
 }
 
 .header-nav-button::disabled {
-  color: var(--green);
-  background-color: var(--ecrie);
-  border: none;
-}
+    color: var(--green);
+    background-color: var(--ecrie);
+    border: none;
+  }
 
 nav {
   margin: 20px;
@@ -389,11 +379,16 @@ footer {
   height: 40vh;
 }
 
+
 /* Menu page
+
 main {
   padding: 50px 200px;
 }
 
+/* Menu page */
+
+.menu-section > h1, h2, h3 {
 .menu-section > h1,
 h2,
 h3 {
@@ -410,7 +405,7 @@ h3 {
 
 .section-green {
   background-color: var(--green);
-  padding: 20px 50px 20px;
+  padding: 20px 50px 50px;
   color: var(--ecrie);
   margin: 0;
 }
@@ -423,7 +418,7 @@ h3 {
 
 .section-ecrie {
   background-color: var(--ecrie);
-  padding: 20px 50px 20px;
+  padding: 20px 50px 50px;
   margin: 0;
 }
 
@@ -445,33 +440,73 @@ h3 {
 /* Inn Gjøl page */
 /* .section-blue {
   background-color: var(--blue);
-  padding: 20px 50px 20px;
+  /* padding: 20px 50px 20px; */
   margin: 0;
 }
+
+
 
 .section-blue > h2,
 h3,
 p,
 table {
+
   color: var(--ecrie);
+  margin: 0px 50px 0;
+}
+
+.section-blue > p {
+  padding: 20px 50px 50px;
+}
+
+.section-blue-h2 {
+  padding-top: 20px;
+  margin-top: 0;
 }
 
 .section-blue > table {
   text-align: left;
-}
+  padding: 20px 0 50px 420px;
+} 
 
 img {
+
+width: 100%;
+margin: 0;
+}
+=======
   width: 100%;
 } */
+
+
 
 /* Party Venue page */
 /* .section-ecrie > h2 {
   color: var(--green);
 }
-
 .section-ecrie > img {
   width: 100%;
   margin-top: 20px;
 } */
 
 /* Meet the staff page */
+.section-staff {
+  display: flex;
+  margin-top: 20px;
+}
+
+.section-staff > img {
+  width: 30%;
+}
+
+.staff-blue {
+  background-color: var(--blue);
+  color: var(--ecrie);
+  width: 70%;
+  padding: 50px 50px;
+}
+
+.staff-blue > h3 {
+  text-align: left;
+  padding: 20px 0;
+}

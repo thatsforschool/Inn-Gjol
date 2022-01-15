@@ -110,25 +110,25 @@ header {
   cursor: pointer;
 }
 
-.header-nav-button::active {
+.header-nav-button:active {
   color: var(--green);
   background-color: var(--khaki);
   border: none;
 }
 
-.header-nav-button::disabled {
+.header-nav-button:disabled {
   color: var(--green);
   background-color: var(--ecrie);
   border: none;
 }
 
-.book {
+.book , .news {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   width: 40vw;
-  height: 60vh;
+  height: 300px;
   margin: 10vh 30vw 0 30vw;
   padding: 0;
   background-color: var(--ecrie);
@@ -136,19 +136,31 @@ header {
   display: none;
 }
 
-.news {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 40vw;
-  height: 100vh;
-  margin: 10vh 30vw 0 30vw;
-  padding: 0;
-  background-color: var(--ecrie);
-  box-shadow: -5px 2px 6px rgba(47, 34, 32, 0.5);
-  display: none;
+
+.book > p , .news > p , .news > h3 {
+  margin: 20px;
+  color: var(--green);
 }
+
+
+
+.header-icon_facebook::before {
+  content: " \f082 ";
+  font-family: "Font Awesome 5 brands";
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--green);
+}
+
+.header-icon_contact::before {
+  content: " \f879 ";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--green);
+  margin-left: 10px;
+}
+
 
 /* .newsBtn:hover .news ,  */
 .newsBtn:focus .news {
@@ -179,22 +191,10 @@ nav > ul > li > a {
   text-decoration: none;
   border-bottom: var(--ecrie) solid 4px;
 }
-/* not related */
 
-div.newsMenu {
-  position: absolute;
-  width: 30vw;
-  height: 100vh;
-  background-color: var(--ecrie);
-  display: none;
-}
-
-div.newsOpened {
-  display: inline-block;
-}
-
-div.newsOpened body {
-  opacity: 0.5;
+nav > ul > li:hover > a {
+  color: var(--khaki);
+  border-bottom: var(--khaki) solid 4px;
 }
 
 /* main */
@@ -304,14 +304,14 @@ main {
   cursor: pointer;
 }
 
-.main-menu_button::active {
+.main-menu_button:active {
   color: var(--green);
   background-color: var(--khaki);
   border: none;
   cursor: pointer;
 }
 
-.main-menu_button::disabled {
+.main-menu_button:disabled {
   border: var(--ecrie) solid 1px;
   color: var(--ecrie);
   background-color: var(--green);
@@ -530,6 +530,10 @@ footer {
     font-size: 0.6rem;
   }
 
+  .news {
+    height: 500px;
+  }
+
   /* main */
 
   .main-section {
@@ -710,17 +714,10 @@ footer {
 
   .news,
   .book {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
     width: 90vw;
-    height: 60vh;
+    height: 300px;
     margin: 10vh 5vw 0 5vw;
     padding: 0;
-    background-color: var(--ecrie);
-    box-shadow: -5px 2px 6px rgba(47, 34, 32, 0.5);
-    display: none;
   }
 
   /* footer */

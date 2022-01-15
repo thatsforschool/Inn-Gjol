@@ -106,25 +106,25 @@ header {
   cursor: pointer;
 }
 
-.header-nav-button::active {
+.header-nav-button:active {
   color: var(--green);
   background-color: var(--khaki);
   border: none;
 }
 
-.header-nav-button::disabled {
+.header-nav-button:disabled {
   color: var(--green);
   background-color: var(--ecrie);
   border: none;
 }
 
-.book {
+.book , .news {
   position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   width: 40vw;
-  height: 60vh;
+  height: 300px;
   margin: 10vh 30vw 0 30vw;
   padding: 0;
   background-color: var(--ecrie);
@@ -132,18 +132,29 @@ header {
   display: none;
 }
 
-.news {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 40vw;
-  height: 100vh;
-  margin: 10vh 30vw 0 30vw;
-  padding: 0;
-  background-color: var(--ecrie);
-  box-shadow: -5px 2px 6px rgba(47, 34, 32, 0.5);
-  display: none;
+
+.book > p , .news > p , .news > h3 {
+  margin: 20px;
+  color: var(--green);
+}
+
+
+
+.header-icon_facebook::before {
+  content: " \f082 ";
+  font-family: "Font Awesome 5 brands";
+  font-weight: 400;
+  font-size: 2rem;
+  color: var(--green);
+}
+
+.header-icon_contact::before {
+  content: " \f879 ";
+  font-family: "Font Awesome 5 free";
+  font-weight: 900;
+  font-size: 2rem;
+  color: var(--green);
+  margin-left: 10px;
 }
 
 /* .newsBtn:hover .news ,  */
@@ -174,6 +185,17 @@ nav > ul > li > a {
   color: var(--ecrie);
   text-decoration: none;
   border-bottom: var(--ecrie) solid 4px;
+}
+
+nav > ul > li:hover > a {
+  color: var(--khaki);
+  border-bottom: var(--khaki) solid 4px;
+}
+
+.header-navItem_inn {
+  color: var(--khaki);
+  border-bottom: var(--khaki) solid 4px;
+  padding: 0 10px;
 }
 
 /* main */
@@ -404,6 +426,10 @@ footer {
   nav > ul > li > a {
     border-bottom: var(--ecrie) solid 3px;
     font-size: 0.6rem;
+  }
+
+  .news {
+    height: 500px;
   }
 
   /* main */

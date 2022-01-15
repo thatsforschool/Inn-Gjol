@@ -7,32 +7,62 @@
     <link rel="stylesheet" href="assets/css/styleFrontPage.css" />
     <link rel="stylesheet" href="assets/fontawsome/css/all.css" />
     <link rel="stylesheet" href="assets/js/front.js" defer />
-    <!-- <link rel="stylesheet" href="assets/js/myMap.js" defer /> -->
+
+    <!-- favicon -->
+
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="assets/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/favicon/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/favicon/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="assets/favicon/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="assets/favicon/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="assets/favicon/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="assets/favicon/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    
+
     <title>Gjøl Kra</title>
   </head>
 
   <body>
     <header>
       <div class="navigation">
-      <div class="header-logo">
-        <img
-          src="assets/icons/Gjøl-Kro_logo/GjŤl-Kro_logo_white.svg "
-          alt="Gjøl Kro"
-        />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="inngjøl.html">Inn Gjøl</a></li>
-          <li><a href="partyvenue.html">Party Venue</a></li>
-          <li><a href="staff.html">Meet the staff</a></li>
-        </ul>
-        <div class="header-buttons">
-          <button class="header-nav-button">News</button>
-          <button class="header-nav-button">Book a Table</button>
+        <div class="header-logo">
+          <img
+            src="assets/icons/Gjøl-Kro_logo/GjŤl-Kro_logo_white.svg "
+            alt="Gjøl Kro"
+          />
         </div>
-      </nav>
-    </div>
+        <nav>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="inngjøl.html">Inn Gjøl</a></li>
+            <li><a href="partyvenue.html">Party Venue</a></li>
+            <li><a href="staff.html">Meet the staff</a></li>
+          </ul>
+        </nav>
+        <div class="header-buttons">
+          <button class="header-nav-button newsBtn">
+            News
+            <div class="news"></div>
+          </button>
+          <button class="header-nav-button bookBtn">
+            Book a Table
+            <div class="book"></div>
+          </button>
+        </div>
+      </div>
     </header>
     <main>
       <section class="main-section ecrie introduction">
@@ -86,7 +116,10 @@
           our food is traditional Danish meals with a modern twist.
         </p>
         <div class="main-buttons">
-          <button class="main-menu_button">Book a Table</button>
+          <button class="main-menu_button bookBtn">
+            Book a Table
+            <div class="book"></div>
+          </button>
           <form action="../Inn-Gjol/menu.html">
             <button class="main-menu_button">See Menu</button>
           </form>
@@ -94,13 +127,10 @@
       </section>
 
       <section class="main-section ecrie favourites">
-        <div class="main-section_table ">
-         <img src="assets/img/imagesInn/table+title.svg" alt=""> 
+        <div class="main-section_table">
+          <img src="assets/img/imagesInn/table+title.svg" alt="" />
         </div>
-        <div
-          class="main-section_favorites-articles ecrie dropdown-content"
-          id="myDropdown"
-        >
+        <div class="main-section_favorites-articles ecrie dropdown-content">
           <article class="favorites-article art_1 khaki">
             <img src="assets/img/imagesLunch/img1.jpg" alt="stjerneskud" />
             <h3>Stjerneskud</h3>
@@ -176,7 +206,6 @@
         <address>
           <p><a href="tel:+4522367687">+45 22 36 76 87</a></p>
           <p>Fjordgade 18 9440 Gjøl</p>
-          <!-- <div class="footer-adress_map" id="map"></div> -->
         </address>
       </section>
       <section class="footer-openingHours">
